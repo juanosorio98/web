@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Sleep - Exercises</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar-toggler" onclick="toggleSidebar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <a href="index.html" class="logo"
+        ><div class="logo">
+          <img
+            src="/images/Healthy Sleep logo.png"
+            alt="Healthy Sleep Logo"
+          /></div
+      ></a>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <h3>Navigator</h3>
+        <div class="close-btn" onclick="toggleSidebar()">&times;</div>
+      </div>
+      <ul class="navigation-links">
+        <li><a href="about.html">Acerca de</a></li>
+        <li><a href="sounds.html">Sonidos</a></li>
+        <li><a href="exercises.html">Ejercicios</a></li>
+        <li><a href="calculator.html">Calculadora</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="banner">
+        <h1>Ejercicios para dormir mejor</h1>
+        <p>Relajate y mejora tu calidad de sueño con estos ejercicios.</p>
+      </div>
+
+      <!-- Exercise Section 1 -->
+      <div class="exercise">
+        <h2>Respiración diafragmática</h2>
+        <p class="exercise-description">
+          La respiración diafragmática (también llamada respiración abdominal)
+          activa el músculo grande situado en la base de los pulmones. Este
+          ejercicio no sólo puede reducir el estrés y aumentar la relajación,
+          sino que también puede fortalecer el diafragma y aumentar la eficacia
+          de nuestra respiración.
+        </p>
+        <button class="show-more-btn" onclick="toggleDetails(this)">
+          Show more
+        </button>
+        <div class="exercise-details">
+          <h3>Detalles del ejercicio</h3>
+          <ol>
+            <li>
+              Tumbado, coloque una mano en la parte superior del pecho y la otra
+              en la parte superior del vientre, justo debajo de la caja
+              torácica.
+            </li>
+            <li>
+              Inhale por la nariz de modo que el vientre empuje contra la mano.
+              La otra mano y el pecho deben permanecer lo más quietos posible.
+            </li>
+            <li>
+              Mientras mantiene el pecho inmóvil, contraiga los músculos del
+              estómago y espire.
+            </li>
+            <li>Repita este proceso.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Exercise Section 2 -->
+      <div class="exercise">
+        <h2>Respiración 4-7-8</h2>
+        <p class="exercise-description">
+          Esta técnica de respiración ligeramente más avanzada ayuda a controlar
+          la velocidad de la respiración. Puede que no sea la mejor opción si no
+          te sientes cómodo aguantando la respiración, pero en general se
+          considera segura y fácil.
+        </p>
+        <button class="show-more-btn" onclick="toggleDetails(this)">
+          Show more
+        </button>
+        <div class="exercise-details">
+          <h3>Detalles del ejercicio</h3>
+          <ol>
+            <li>Inhala por la nariz durante 4 segundos.</li>
+            <li>Aguanta la respiración durante 7 segundos.</li>
+            <li>
+              Exhala por la boca durante 8 segundos, dejando que la exhalación
+              haga un sonido natural como si estuvieras soplando una vela.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- Exercise Section 3 -->
+      <div class="exercise">
+        <h2>Exploración corporal</h2>
+        <p class="exercise-description">
+          La exploración corporal es un tipo de meditación que consiste en
+          prestar atención lenta y concentrada a distintas partes del cuerpo.
+        </p>
+        <button class="show-more-btn" onclick="toggleDetails(this)">
+          Show more
+        </button>
+        <div class="exercise-details">
+          <h3>Detalles del ejercicio</h3>
+          <p>
+            Cuando estés cómodamente tumbado en la cama, sigue estos pasos para
+            realizar un escáner corporal relajante:
+          </p>
+          <ol>
+            <li>
+              Empieza respirando hondo unas cuantas veces para relajar el
+              cuerpo.
+            </li>
+            <li>
+              Centra tu atención en los pies y fíjate en las sensaciones de los
+              dedos y en si estás haciendo tensión en esta parte del cuerpo.
+            </li>
+            <li>
+              Reconoce cualquier molestia e intenta liberarte de ella. Visualiza
+              cómo la tensión abandona el cuerpo a través de la respiración.
+            </li>
+            <li>
+              Cuando estés preparado, traslada tu atención a los músculos de la
+              pantorrilla, repitiendo el proceso de notar las sensaciones y
+              visualizar la tensión que se va a través de la respiración.
+            </li>
+            <li>
+              Desplaza metódicamente tu atención a cada parte del cuerpo, una
+              por una, desde los pies hasta la frente, hasta que hayas escaneado
+              todo el cuerpo.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Add more exercise sections here -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

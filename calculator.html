@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Sleep - Sleep Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar-toggler" onclick="toggleSidebar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <a href="index.html" class="logo"
+        ><div class="logo">
+          <img
+            src="/images/Healthy Sleep logo.png"
+            alt="Healthy Sleep Logo"
+          /></div
+      ></a>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <h3>Navigator</h3>
+        <div class="close-btn" onclick="toggleSidebar()">&times;</div>
+      </div>
+      <ul class="navigation-links">
+        <li><a href="about.html">Acerca de</a></li>
+        <li><a href="sounds.html">Sonidos</a></li>
+        <li><a href="exercises.html">Ejercicios</a></li>
+        <li><a href="calculator.html">Calculadora</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="calculator">
+        <h1>Calculadora de sueño</h1>
+        <p>Introduce la hora a la que quieres despertar:</p>
+        <input type="time" id="wake-time" />
+        <button onclick="calculateSleep()">Calcular</button>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
